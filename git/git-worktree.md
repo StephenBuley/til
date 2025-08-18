@@ -22,7 +22,7 @@ Now the workflow would instead look like this:
 - `cd ../bug-fix`
 - Fix the bug, commit, push, so on
 - `cd ../my-cool-feature`
-- `git worktree remove ../bug-fix`
+- `git worktree remove bug-fix`
 
 If I understand it right, I think that should be all there is - your original feature and other worktrees will stay perfectly intact. I'll be diving into this in the next week and either update this or add more as I come to understand the best workflows better.
 
