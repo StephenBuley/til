@@ -39,4 +39,13 @@ div {
 }
 ```
 
-Note that you do have to include the first of the repeating cycle, so in this case it only saves two lines to do repeating - you aren't able to just leave it at red -> blue because CSS doesn't know what to repeat.
+~~Note that you do have to include the first of the repeating cycle, so in this case it only saves two lines to do repeating - you aren't able to just leave it at red -> blue because CSS doesn't know what to repeat.~~
+
+The note was wrong! If you give the value at the beginning a start value as well (not just an end value as above), CSS should pick it up as a repeating value.
+
+```css
+div {
+  /* explicitly give red the start value of 0 */
+  background: repeating-linear-gradient(red 0 20%, blue 20% 40%);
+}
+```
